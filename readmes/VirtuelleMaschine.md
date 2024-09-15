@@ -16,6 +16,18 @@ eines Rechners und sind vom Host-System abgekapselt.
 * Kernel: "Kern eines Betriebssystems".
 * Das Program, das die unterste Schicht der Betriebssystem-Software darstellt.
 * Das erste Programm, das nach dem Systemstart in den Arbeitsspeicher geladen wird.
-* Fungiert als Schnitschtelle zwieschen Hardware und der Anwendungssoftware:
+* Fungiert als Schnitschtelle zwischen Hardware und der Anwendungssoftware:
   * Verwaltet die CPU-Ressourcen für die Prozesse.
   * Steuert die Zugriffe auf den Speicher und die Geräte(Grafikkarte, Tastatur, ...).
+
+### Was sind die Nachteile von VMs?
+
+* Es wird eine komplette Rechnerarchitektur visualisiert mit Anwendungssoftware und Kernel.
+* Tendenziell langsamer als ohne VM.
+* Hohe Rechenleistung (Arbeitsspeicher, CPU).
+* Größerer Speicherplatz-Verbrauch.
+* Oft braucht man aber gar keine komplette virtuelle Maschine.
+* <b>Idee für mehr Effizient:</b>
+  * Man virtualisiert nur die Anwendungssoftware und nicht den Kernel.
+  * Dann würde auch der Overhead wegfallen.
+  * Teschnische Details der Art der Virtualisierung am Ende dieses Abschnitts.

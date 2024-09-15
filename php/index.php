@@ -1,0 +1,1 @@
+<h1>Hallo Welt von PHP ... <?php echo rand(1, 1000); ?> </h1>

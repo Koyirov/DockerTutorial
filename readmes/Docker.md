@@ -26,7 +26,7 @@ gesprungen sein, bei mir ist das zum aktuellen Zeitpunkt "Schritt 4". Die andere
 Lade dir dort ein Update für das Windows Subsystem for Linux herunter 
 (eine .msi-Datei), und führe diese Datei aus. Klicke dich durch diesen 
 Installationsassistenten, und klicke anschließend in Docker Desktop auf 
-"Restart". Damit wird Docker Desktop neugestartet, und Docker sollte 
+"Restart". Damit wird Docker Desktop neu gestartet, und Docker sollte 
 jetzt funktionieren :)
 
 Hinweis: Sollte Docker Desktop nach der Installation des Kernels dies 

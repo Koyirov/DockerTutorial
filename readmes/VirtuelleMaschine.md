@@ -30,4 +30,3 @@ eines Rechners und sind vom Host-System abgekapselt.
 * <b>Idee für mehr Effizient:</b>
   * Man virtualisiert nur die Anwendungssoftware und nicht den Kernel.
   * Dann würde auch der Overhead wegfallen.
-  * Teschnische Details der Art der Virtualisierung am Ende dieses Abschnitts.

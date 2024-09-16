@@ -8,6 +8,7 @@
 * **rm** - (remove) Dateien und Ordner löschen.
 * **cat** - (concatenate) eine neue Textdatei anlegen.
 * **touch** - eine neue Datei anlegen.
+* **top** - System Informationen anzeigen.
 * **clear** - Konsole leeren.
 * **exit** (oder **Strg + D**) - Shell beenden.
 * **Unter Ubuntu:**

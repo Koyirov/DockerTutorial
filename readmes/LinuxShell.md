@@ -9,6 +9,9 @@
 * **cat** - (concatenate) eine neue Textdatei anlegen.
 * **touch** - eine neue Datei anlegen.
 * **top** - System Informationen anzeigen.
+* **tree** - Verzeichnisbaum und denen Inhalte anzeigen.
+* **cmatrix** - Es kann Zeilen mit der gleichen Geschwindigkeit oder asynchron und mit
+einer benutzerdefinierten Geschwindigkeit scrollen. **cmatrix** ist vom Film Matrix inspiriert.
 * **clear** - Konsole leeren.
 * **exit** (oder **Strg + D**) - Shell beenden.
 * **Unter Ubuntu:**

@@ -42,7 +42,7 @@ von Container liegen
 
 * Es gibt noch eine alternative (und kürzere) Schreibweise für einen bind *mount*
   * Man kann auch die Flag -v (oder: --volume) verwenden:
-    * -v [absoluter Pfad zu lokalem Verzeichnis][Pfad zu Container-Verzeichnis]
+    * **-v [absoluter Pfad zu lokalem Verzeichnis][Pfad zu Container-Verzeichnis]**
       * Man muss immer den absoluten Pfad zu dem lokalen Verzeichnis angeben!
 * Der wesentliche Unterschied zwischen den beiden Schreibweisen besteht darin, dass Docker bei *-v*
 ein neues Verzeichnis im Host-System anlegen wird, falls es noch nicht existieren sollte, während

@@ -21,6 +21,6 @@ um ein Volume zu verknüpfen
       * Falls das Volume nicht existiert, wird Docker es automatisch anlegen
       * Das bedeutet auch, dass man bei der Flag **-v** sehr gut aufpassen muss, dass man
       nicht ein neues Volume erzeugt, wenn man stattdessen eigentlich einen *bind mount*
-      durchführen will.!
+      durchführen will!
 * Man kann natürlich auch einen Container mit mehreren Volumes verbinden (einfach *-v*
 mehrfach angeben)

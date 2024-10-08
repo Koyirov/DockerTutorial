@@ -1,0 +1,7 @@
+FROM debian
+
+EXPOSE 80/tcp
+EXPOSE 443/tcp
+EXPOSE 8888
+
+CMD ["bash"]

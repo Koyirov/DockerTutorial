@@ -1,0 +1,3 @@
+import other
+
+other.printHallo()

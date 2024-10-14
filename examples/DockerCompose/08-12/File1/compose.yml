@@ -1,0 +1,9 @@
+services:
+    web:
+        image: nginx
+        ports:
+            - 7080:80
+    web2:
+        image: httpd
+        ports:
+            - 7081:80

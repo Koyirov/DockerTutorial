@@ -1,0 +1,18 @@
+version: '3'
+services:
+  db: 
+    image: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=geheim
+    restart: on-failure:10
+
+  pma: 
+    image: phpmyadmin
+    environment:
+      - PMA_HOST=db
+    ports:
+      - 6080:80
+    restart: on-failure:10
+    depends_on: 
+      - db
+

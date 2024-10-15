@@ -1,0 +1,12 @@
+services:
+    db:
+      image: mariadb
+      environment:
+        - MARIADB_ROOT_PASSWORD=geheim
+
+    pma:
+      image: phpmyadmin
+      environment:
+        - PMA_HOST=db
+      ports:
+        - 6080:80

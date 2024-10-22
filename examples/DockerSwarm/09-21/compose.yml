@@ -1,0 +1,20 @@
+services:
+  db:
+    image: mariadb:10
+    environment:
+      MYSQL_ROOT_PASSWORD: "geheim"
+    volumes:
+      - datenbank:/var/lib/mysql
+      
+  phpmyadmin:
+    image: phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    ports:
+      - 9091:80
+    deploy:
+      replicas: 1
+
+volumes:
+  datenbank:

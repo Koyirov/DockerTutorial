@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  db:
+    image: mariadb:10
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_password
+    secrets: 
+      - mysql_password
+    volumes:
+      - datenbank:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_PASSWORD_FILE: /run/secrets/db_password
+      PMA_USER: root
+    secrets:
+      - source: mysql_password
+        target: db_password
+    ports:
+      - 9091:80
+    deploy: 
+      replicas: 1
+
+volumes:
+  datenbank:
+
+secrets: 
+  mysql_password:
+    external: true

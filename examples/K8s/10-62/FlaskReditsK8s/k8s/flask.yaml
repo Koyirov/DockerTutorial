@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-flask
+  labels: 
+    app: flask-app
+    part: flask
+spec: 
+  replicas: 5
+  selector: 
+    matchLabels: 
+      app: flask-app
+      part: flask
+  template: 
+    metadata: 
+      labels: 
+        app: flask-app
+        part: flask
+    spec: 
+      containers: 
+        - name: flask-app-flask
+          image: flask-app:1.0
+          ports: 
+            - containerPort: 5000
+          env: 
+            - name: REDIS_HOST
+              value: flask-app-redis
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: flask-app-flask
+  labels: 
+    app: flask-app
+    part: flask 
+spec: 
+  type: NodePort
+  ports: 
+    - port: 5000
+      targetPort: 5000
+      protocol: TCP
+  selector:
+    app: flask-app
+    part: flask
